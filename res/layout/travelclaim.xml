@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/TravelClaimsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="My Travel Claims"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/EmailClaimsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="Email" />
+
+    <Button
+        android:id="@+id/DeleteClaimsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/EmailClaimsButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="Delete" />
+
+    <Button
+        android:id="@+id/EditClaimsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/DeleteClaimsButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="Edit" />
+
+    <Button
+        android:id="@+id/ClaimsAddButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/EditClaimsButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="Add" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ClaimsAddButton"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TravelClaimsTitle" >
+
+    </ListView>
+
+</RelativeLayout>
