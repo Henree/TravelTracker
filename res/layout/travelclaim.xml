@@ -4,28 +4,19 @@
     android:layout_height="match_parent" >
 
     <TextView
-        android:id="@+id/TravelClaimsTitle"
+        android:id="@+id/CurrentClaimsTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:text="My Travel Claims"
+        android:text="Current Claim Expenses"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Button
-        android:id="@+id/EmailClaimsButton"
+        android:id="@+id/DeleteExpenseButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:text="Email" />
-
-    <Button
-        android:id="@+id/DeleteClaimsButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/EmailClaimsButton"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:text="Delete" />
@@ -34,10 +25,20 @@
         android:id="@+id/EditClaimsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/DeleteClaimsButton"
+        android:layout_above="@+id/DeleteExpenseButton"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:text="Edit" />
+        android:text="Delete" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ClaimsAddButton"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/CurrentClaimsTitle" >
+
+    </ListView>
 
     <Button
         android:id="@+id/ClaimsAddButton"
@@ -46,16 +47,6 @@
         android:layout_above="@+id/EditClaimsButton"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:text="Add" />
-
-    <ListView
-        android:id="@+id/listView1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/ClaimsAddButton"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/TravelClaimsTitle" >
-
-    </ListView>
+        android:text="Add New Expense" />
 
 </RelativeLayout>
