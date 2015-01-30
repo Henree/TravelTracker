@@ -2,6 +2,89 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
-    
+
+    <EditText
+        android:id="@+id/ExpenseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ExpenseName"
+        android:ems="10"
+        android:inputType="date"
+        android:text="MM/DD/YYYY" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/ExpenseCat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ExpenseDate"
+        android:ems="10"
+        android:text="Category eg: Cab or Food" />
+
+    <EditText
+        android:id="@+id/ExpenseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/ExpenseCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ExpenseCat"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="Cost eg: 4.20" />
+
+    <EditText
+        android:id="@+id/ExpenseCurrency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ExpenseCost"
+        android:ems="10"
+        android:text="Currency eg: CAD, USD or EURO" />
+
+    <EditText
+        android:id="@+id/ExpenseDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ExpenseCurrency"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="Description" />
+
+    <Button
+        android:id="@+id/ExpenseAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ExpenseDetail"
+        android:layout_centerHorizontal="true"
+        android:text="Add" />
+
+    <TextView
+        android:id="@+id/ExpenseTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="New Expense"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>

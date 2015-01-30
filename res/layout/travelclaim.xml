@@ -22,13 +22,13 @@
         android:text="Delete" />
 
     <Button
-        android:id="@+id/EditClaimsButton"
+        android:id="@+id/EditExpenseButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/DeleteExpenseButton"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:text="Delete" />
+        android:text="Edit" />
 
     <ListView
         android:id="@+id/listView1"
@@ -44,7 +44,7 @@
         android:id="@+id/ClaimsAddButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/EditClaimsButton"
+        android:layout_above="@+id/EditExpenseButton"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:text="Add New Expense" />
