@@ -1,6 +1,6 @@
 package ca.ualberta.cs.traveltracker;
 
-public class TravelClaims 
+public class Claims 
 {
 	
 }

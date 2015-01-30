@@ -1,9 +1,9 @@
 package ca.ualberta.cs.traveltracker;
 
-public class TravelExpenses 
+public class Expenses 
 {
 
-	public TravelExpenses(String string) {
+	public Expenses(String string) {
 		// TODO Auto-generated constructor stub
 	}
 
