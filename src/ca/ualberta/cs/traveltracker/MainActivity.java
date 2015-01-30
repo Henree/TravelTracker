@@ -16,8 +16,9 @@ limitations under the License.
 /*
  This android application is an app that keeps track of your travel claims and expenses
  */
-package ca.ualberta.cs.example.traveltracker;
+package ca.ualberta.cs.traveltracker;
 
+import ca.ualberta.cs.traveltracker.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
